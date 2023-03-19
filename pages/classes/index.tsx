@@ -15,6 +15,7 @@ import ModalWrapper from '@components/wrappers/ModalWrapper'
 import ModalInput from '@components/ModalInput/ModalInput'
 import Table from '@components/Table/Table'
 import LoadingOverlay from '@components/LoadingOverlay/LoadingOverlay'
+import  Head  from 'next/head'
 
 
 interface IClassProps {
@@ -302,6 +303,9 @@ const index = ({ linkQuery, page, limit }: IClassProps) => {
   }
   return (
     <DashboardLayout>
+      <Head>
+        <title>Classes</title>
+      </Head>
       {
         (loading && !isOpen && !updating) ?
           <LoadingOverlay isFullPage={false} />

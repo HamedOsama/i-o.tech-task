@@ -6,11 +6,15 @@ import Line from "@components/Line/Line";
 import Button from "@components/Button/Button";
 import KeyboardBackspaceRoundedIcon from '@mui/icons-material/KeyboardBackspaceRounded';
 import DashboardLayout from "@components/layouts/DashboardLayout";
+import  Head  from 'next/head'
 
 const index = ({ selectedClass }) => {
   const router = useRouter();
   return (
     <DashboardLayout>
+      <Head>
+        <title>Class {selectedClass.id}</title>
+      </Head>
       <Button
         type="button"
         ariaLabel="Back to all classes"

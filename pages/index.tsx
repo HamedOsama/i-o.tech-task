@@ -7,10 +7,15 @@ import axios from 'axios';
 import DashboardLayout from '@components/layouts/DashboardLayout';
 import InfoCard from '@components/InfoCard/InfoCard';
 import env from '../API/ApiUrl';
+import Head from 'next/head';
+
 
 const index = ({ stats }) => {
   return (
     <div>
+      <Head>
+        <title>Dashboard</title>
+      </Head>
       <DashboardLayout >
         <div className="container max-md:p-2 mx-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-4 ">
           <InfoCard title='Clients' link='/clients' value={stats?.clients || '0'} Icon={<PeopleRoundedIcon className="text-green-400" />} bg='bg-green-300' />

@@ -10,6 +10,7 @@ import FormWrapper from '../../components/wrappers/FormWrapper';
 import Input from '../../components/Input/Input';
 import useInput from '../../hooks/use-input';
 import LoadingOverlay from '@components/LoadingOverlay/LoadingOverlay';
+import Head from 'next/head';
 
 axios.defaults.withCredentials = true;
 const index = () => {
@@ -80,6 +81,9 @@ const index = () => {
   }
   return (
     <LoginLayout >
+      <Head>
+        <title>Login</title>
+      </Head>
       {loading && <LoadingOverlay isFullPage={true} />}
       <FormWrapper login={true}>
         <form className='mt-8' onSubmit={SubmitLoginHandler}>
