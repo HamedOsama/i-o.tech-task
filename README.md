@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# I-O Tech Task
 
-## Getting Started
+## Live Demo 🌐
 
-First, run the development server:
+**You Can See The `Clone` Live On:** [Here](https://i-o-tech-task.vercel.app)
+
+## :rocket: Technologies used:
+
+<p align="center">
+<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg" alt="html5" width="70" height="70"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" alt="css3" width="70" height="70"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="javascript" width="70" height="70"/>
+<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React"  width="70" height="70"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png" alt="Next.js"  width="70" height="70"/>
+</p>
+
+
+## Additional Used
+-  [x] NPM
+-  [x] ES6 (Modules)
+-  [x] MUI
+-  [x] Axios
+-  [x] React-paginate
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+> ✅ **Feel Free To Fork and Contribute**
+
+---
+
+## ⭐ Features
+
+-  [x] Authentication
+-  [x] Curd operations
+-  [x] Pagination
+-  [x] Data limitaion control
+-  [x] Notifications
+-  [x] Error Handling
+-  [x] Responsive design
+
+## 🛠️ Installation Steps
+
+1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/HamedOsama/i-o.tech-task.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Change the working directory
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+cd i-o.tech-task
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Install dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm install
+```
 
-## Learn More
+4. Run the app
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You are ready to build! Open [localhost:3000](http://localhost:3000/) to see the app.
+## Authors
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Developed by **Hamed Osama**
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   Gmail: **[`hamedosama19@gmail.com`]**
+-   **[LinkedIN](https://www.linkedin.com/in/hamed-osama-70b838206/)**
