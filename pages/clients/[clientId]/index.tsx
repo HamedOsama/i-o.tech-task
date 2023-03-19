@@ -6,7 +6,7 @@ import Line from "@components/Line/Line";
 import Button from "@components/Button/Button";
 import KeyboardBackspaceRoundedIcon from '@mui/icons-material/KeyboardBackspaceRounded';
 import DashboardLayout from "@components/layouts/DashboardLayout";
-import  Head  from 'next/head'
+import Head from 'next/head'
 
 const index = ({ client }) => {
   const router = useRouter();
@@ -77,10 +77,6 @@ const index = ({ client }) => {
 export default index;
 
 export const getServerSideProps = async (context: any) => {
-  const cookies = context.req.headers.cookie;
-  const accessToken = cookies.split(';').find((el: any) => el.trim().startsWith('IOsession='));
-  if (!accessToken)
-    throw new Error("No access token found")
   const { clientId } = context.query
   if (!clientId) {
     return {
@@ -88,6 +84,10 @@ export const getServerSideProps = async (context: any) => {
     }
   }
   try {
+    const cookies = context.req.headers.cookie;
+    const accessToken = cookies.split(';').find((el: any) => el.trim().startsWith('IOsession='));
+    if (!accessToken)
+      throw new Error("No access token found")
     const req = await axios.get(`${env.API_URL}/clients/${clientId}`, {
       headers: {
         Cookie: context.req.headers.cookie,
