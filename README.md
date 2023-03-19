@@ -49,7 +49,7 @@ git clone https://github.com/HamedOsama/i-o.tech-task.git
 2. Change the working directory
 
 ```bash
-cd i-o.tech-task
+cd ./i-o.tech-task
 ```
 
 3. Install dependencies
